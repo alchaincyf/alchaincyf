@@ -15,8 +15,15 @@
 不是让 AI 模仿某个人说话，而是提炼他们 *怎么想问题*。芒格的跨学科思考、费曼的第一性原理教学、塔勒布的反脆弱直觉——这些思维方式可以被结构化、被复用、被组合。我做了 21 个人物 skill，全部开源。
 
 [![nuwa-skill](https://img.shields.io/github/stars/alchaincyf/nuwa-skill?style=flat&label=nuwa-skill)](https://github.com/alchaincyf/nuwa-skill)
+[![darwin-skill](https://img.shields.io/github/stars/alchaincyf/darwin-skill?style=flat&label=darwin-skill)](https://github.com/alchaincyf/darwin-skill)
 [![steve-jobs-skill](https://img.shields.io/github/stars/alchaincyf/steve-jobs-skill?style=flat&label=Steve%20Jobs)](https://github.com/alchaincyf/steve-jobs-skill)
 [![x-mentor-skill](https://img.shields.io/github/stars/alchaincyf/x-mentor-skill?style=flat&label=X%20Mentor)](https://github.com/alchaincyf/x-mentor-skill)
+
+**[达尔文.skill](https://github.com/alchaincyf/darwin-skill)** — 让所有 Skill 自主进化
+
+受 Karpathy autoresearch 启发，用自主实验循环批量优化 Skill。8 维度评估、棘轮机制（只保留改进，自动回滚退步）、独立 agent 评分。女娲造 Skill，达尔文磨 Skill。
+
+<a href="https://github.com/alchaincyf/darwin-skill"><img src="https://raw.githubusercontent.com/alchaincyf/darwin-skill/master/assets/banner.svg" alt="达尔文.skill" width="500"></a>
 
 **橙皮书系列** — 免费的 AI 实战指南
 
