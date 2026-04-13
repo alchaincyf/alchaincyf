@@ -15,6 +15,8 @@
 不是让 AI 模仿某个人说话，而是提炼他们 *怎么想问题*。芒格的跨学科思考、费曼的第一性原理教学、塔勒布的反脆弱直觉——这些思维方式可以被结构化、被复用、被组合。我做了 21 个人物 skill，全部开源。
 
 [![nuwa-skill](https://img.shields.io/github/stars/alchaincyf/nuwa-skill?style=flat&label=nuwa-skill)](https://github.com/alchaincyf/nuwa-skill)
+[![steve-jobs-skill](https://img.shields.io/github/stars/alchaincyf/steve-jobs-skill?style=flat&label=Steve%20Jobs)](https://github.com/alchaincyf/steve-jobs-skill)
+[![x-mentor-skill](https://img.shields.io/github/stars/alchaincyf/x-mentor-skill?style=flat&label=X%20Mentor)](https://github.com/alchaincyf/x-mentor-skill)
 
 **橙皮书系列** — 免费的 AI 实战指南
 
