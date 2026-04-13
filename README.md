@@ -4,7 +4,7 @@
 
 但我用 AI 做出了 AppStore 付费榜 Top 1 的产品（小猫补光灯），写了 9 本技术书，造了一个能「蒸馏任何人思维方式」的开源框架。
 
-这不是炫耀，这是我想说的事情本身——**AI 正在重新定义「会」的含义。**
+所有产品，全部 AI 写的。我只负责想清楚要做什么。
 
 ---
 
@@ -23,10 +23,6 @@
 [![hermes-agent](https://img.shields.io/github/stars/alchaincyf/hermes-agent-orange-book?style=flat&label=Hermes%20Agent)](https://github.com/alchaincyf/hermes-agent-orange-book)
 [![obsidian-ai](https://img.shields.io/github/stars/alchaincyf/obsidian-ai-orange-book?style=flat&label=Obsidian%20AI)](https://github.com/alchaincyf/obsidian-ai-orange-book)
 [![claude-code](https://img.shields.io/github/stars/alchaincyf/claude-code-orange-book?style=flat&label=Claude%20Code)](https://github.com/alchaincyf/claude-code-orange-book)
-
-**GLM Code** — 国产 AI 编程助手
-
-基于智谱 GLM 大模型，20 元/月，支付宝微信直接付。让更多中文开发者用上 AI 编程。
 
 ---
 
@@ -52,3 +48,5 @@
 | YouTube | [@Alchain](https://www.youtube.com/@Alchain) | 英文内容（偶尔） |
 | 小红书 | [花叔](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf) | 图文笔记 |
 | 官网 | [huasheng.ai](https://www.huasheng.ai/) | 橙皮书合集、工具 |
+| 博客 | [bookai.top](https://bookai.top) | AI 写作与开发笔记 |
+| 图床 | [img2046.com](https://img2046.com) | 个人项目 |
