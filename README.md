@@ -40,15 +40,4 @@
 
 ### 找到我
 
-我的主要内容都在中文互联网：
-
-| 平台 | 链接 | 内容 |
-|------|------|------|
-| 公众号 | 微信搜「花叔」 | 深度文章、AI 实战教程 |
-| B 站 | [@花叔](https://space.bilibili.com/14097567) | 视频教程、现场演示 |
-| X | [@AlchainHust](https://x.com/AlchainHust) | 碎片思考、项目更新 |
-| YouTube | [@Alchain](https://www.youtube.com/@Alchain) | 英文内容（偶尔） |
-| 小红书 | [花叔](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf) | 图文笔记 |
-| 官网 | [huasheng.ai](https://www.huasheng.ai/) | 橙皮书合集、工具 |
-| 博客 | [bookai.top](https://bookai.top) | AI 写作与开发笔记 |
-| 图床 | [img2046.com](https://img2046.com) | 个人项目 |
+公众号「花叔」 · [B站](https://space.bilibili.com/14097567) · [X](https://x.com/AlchainHust) · [YouTube](https://www.youtube.com/@Alchain) · [小红书](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf) · [huasheng.ai](https://www.huasheng.ai/) · [bookai.top](https://bookai.top) · [img2046.com](https://img2046.com)
