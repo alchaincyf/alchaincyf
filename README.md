@@ -10,6 +10,12 @@
 
 ### 我在做的事
 
+**Huashu Design · 我正在把设计作为一种 skill**
+
+在 Claude Code 里用 HTML 做高保真原型、幻灯片、动画和信息图的设计 skill。20 种设计哲学、5 维度专家评审、苹果发布会级动画导出——设计从「装饰」变成「可决策的判断」。
+
+[![Huashu Design](https://raw.githubusercontent.com/alchaincyf/huashu-design/master/assets/banner.svg)](https://github.com/alchaincyf/huashu-design)
+
 **女娲.skill** — 把人的思维框架变成可运行的代码
 
 不是让 AI 模仿某个人说话，而是提炼他们 *怎么想问题*。芒格的跨学科思考、费曼的第一性原理教学、塔勒布的反脆弱直觉——这些思维方式可以被结构化、被复用、被组合。我做了 21 个人物 skill，全部开源。
@@ -18,6 +24,8 @@
 [![darwin-skill](https://img.shields.io/github/stars/alchaincyf/darwin-skill?style=flat&label=darwin-skill)](https://github.com/alchaincyf/darwin-skill)
 [![steve-jobs-skill](https://img.shields.io/github/stars/alchaincyf/steve-jobs-skill?style=flat&label=Steve%20Jobs)](https://github.com/alchaincyf/steve-jobs-skill)
 [![x-mentor-skill](https://img.shields.io/github/stars/alchaincyf/x-mentor-skill?style=flat&label=X%20Mentor)](https://github.com/alchaincyf/x-mentor-skill)
+
+[![女娲.skill](https://raw.githubusercontent.com/alchaincyf/nuwa-skill/main/assets/banner.svg)](https://github.com/alchaincyf/nuwa-skill)
 
 **[达尔文.skill](https://github.com/alchaincyf/darwin-skill)** — 让所有 Skill 自主进化
 
