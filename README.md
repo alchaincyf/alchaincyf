@@ -31,7 +31,7 @@
 
 受 Karpathy autoresearch 启发，用自主实验循环批量优化 Skill。8 维度评估、棘轮机制（只保留改进，自动回滚退步）、独立 agent 评分。女娲造 Skill，达尔文磨 Skill。
 
-<a href="https://github.com/alchaincyf/darwin-skill"><img src="https://raw.githubusercontent.com/alchaincyf/darwin-skill/master/assets/banner.svg" alt="达尔文.skill" width="500"></a>
+[![达尔文.skill](https://raw.githubusercontent.com/alchaincyf/darwin-skill/master/assets/banner.svg)](https://github.com/alchaincyf/darwin-skill)
 
 **橙皮书系列** — 免费的 AI 实战指南
 
