@@ -1,8 +1,8 @@
 # 花叔
 
-我不会写代码。一行都不会。
+我一行代码都不会写。
 
-但我用 AI 做出了 AppStore 付费榜 Top 1 的产品（小猫补光灯），写了 9 本技术书，造了一个能「蒸馏任何人思维方式」的开源框架。
+但用 AI 做出了 AppStore Top 1 付费产品（小猫补光灯），写了 9 本技术书，开源的 skill 框架一个月拿了 4 万 star。
 
 所有产品，全部 AI 写的。我只负责想清楚要做什么。
 
@@ -49,10 +49,14 @@
 
 **实践是唯一的检验标准。** 我不写「AI 可能会怎样」的文章，只写「我用 AI 做了什么」的记录。每一篇教程、每一本橙皮书，都是真实项目的副产品。
 
-**做出来比说出来有用。** 女娲.skill 两周 9000 star，没做任何推广。好东西放出去，自己会跑。
+**做出来比说出来有用。** 女娲.skill 一个月 1.9 万 star，没做任何推广。好东西放出去，自己会跑。
 
 ---
 
 ### 找到我
 
-公众号「花叔」 · [B站](https://space.bilibili.com/14097567) · [X](https://x.com/AlchainHust) · [YouTube](https://www.youtube.com/@Alchain) · [小红书](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf) · [huasheng.ai](https://www.huasheng.ai/) · [bookai.top](https://bookai.top) · [img2046.com](https://img2046.com)
+**主要阵地** · 公众号「花叔」 · [huasheng.ai](https://www.huasheng.ai/) · [bookai.top](https://bookai.top)
+
+**社交平台** · [B站 花叔v](https://space.bilibili.com/14097567) · [X 花叔](https://x.com/AlchainHust) · [YouTube 花叔](https://www.youtube.com/@Alchain) · [小红书 花叔](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf)
+
+**邮箱合作** · alchaincyf3@gmail.com
