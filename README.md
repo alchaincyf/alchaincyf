@@ -6,6 +6,8 @@
 
 所有产品，全部 AI 写的。我只负责想清楚要做什么。
 
+[![花叔的 GitHub Stats](https://github-readme-stats.vercel.app/api?username=alchaincyf&show_icons=true&include_all_commits=true&hide_border=true&card_width=480)](https://github.com/alchaincyf)
+
 ---
 
 ### 我在做的事
