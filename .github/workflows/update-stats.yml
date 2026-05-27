@@ -1,0 +1,120 @@
+name: Update Stats Badges
+
+on:
+  schedule:
+    - cron: '17 0 * * *'  # 每天 UTC 0:17（错峰避高峰）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch GitHub stats
+        id: stats
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+
+          # Page 1: 前 100 个 owned non-fork repo（按 stars 降序，确保 high-star 在前）
+          PAGE1=$(gh api graphql -f query='
+            query {
+              user(login: "alchaincyf") {
+                repositories(first: 100, ownerAffiliations: OWNER, isFork: false, orderBy: {field: STARGAZERS, direction: DESC}) {
+                  pageInfo { hasNextPage endCursor }
+                  totalCount
+                  nodes { stargazerCount }
+                }
+                followers { totalCount }
+              }
+            }')
+
+          S1=$(echo "$PAGE1" | jq '[.data.user.repositories.nodes[].stargazerCount] | add // 0')
+          HAS_NEXT=$(echo "$PAGE1" | jq -r '.data.user.repositories.pageInfo.hasNextPage')
+          CURSOR=$(echo "$PAGE1" | jq -r '.data.user.repositories.pageInfo.endCursor')
+          REPOS=$(echo "$PAGE1" | jq -r '.data.user.repositories.totalCount')
+          FOLLOWERS=$(echo "$PAGE1" | jq -r '.data.user.followers.totalCount')
+
+          STARS=$S1
+          if [ "$HAS_NEXT" = "true" ]; then
+            PAGE2=$(gh api graphql -f query="
+              query {
+                user(login: \"alchaincyf\") {
+                  repositories(first: 100, after: \"$CURSOR\", ownerAffiliations: OWNER, isFork: false, orderBy: {field: STARGAZERS, direction: DESC}) {
+                    nodes { stargazerCount }
+                  }
+                }
+              }")
+            S2=$(echo "$PAGE2" | jq '[.data.user.repositories.nodes[].stargazerCount] | add // 0')
+            STARS=$((S1 + S2))
+          fi
+
+          # 格式化：>= 1000 用 xx.xk，去掉无效 .0
+          fmt() {
+            local n=$1
+            if [ "$n" -ge 1000 ]; then
+              awk -v n=$n 'BEGIN { printf "%.1fk", n/1000 }' | sed 's/\.0k$/k/'
+            else
+              echo "$n"
+            fi
+          }
+
+          STARS_FMT=$(fmt $STARS)
+          FOLLOWERS_FMT=$(fmt $FOLLOWERS)
+
+          {
+            echo "stars=$STARS_FMT"
+            echo "followers=$FOLLOWERS_FMT"
+            echo "repos=$REPOS"
+          } >> $GITHUB_OUTPUT
+
+          echo "Stats: stars=$STARS ($STARS_FMT), followers=$FOLLOWERS ($FOLLOWERS_FMT), repos=$REPOS"
+
+      - name: Update README
+        env:
+          STARS: ${{ steps.stats.outputs.stars }}
+          FOLLOWERS: ${{ steps.stats.outputs.followers }}
+          REPOS: ${{ steps.stats.outputs.repos }}
+        run: |
+          python3 <<'PYEOF'
+          import os, re
+          stars = os.environ['STARS']
+          followers = os.environ['FOLLOWERS']
+          repos = os.environ['REPOS']
+
+          new_block = (
+              "<!-- STATS-START -->\n"
+              f"[![Total Stars](https://img.shields.io/badge/Total%20Stars-{stars}-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)\n"
+              f"[![Followers](https://img.shields.io/badge/Followers-{followers}-4C8BF5?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=followers)\n"
+              f"[![Public Repos](https://img.shields.io/badge/Public%20Repos-{repos}-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)\n"
+              "<!-- STATS-END -->"
+          )
+
+          with open('README.md', 'r', encoding='utf-8') as f:
+              content = f.read()
+          content = re.sub(
+              r'<!-- STATS-START -->.*?<!-- STATS-END -->',
+              new_block,
+              content,
+              flags=re.DOTALL,
+          )
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(content)
+          PYEOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: refresh stats badges"
+            git push
+          fi
