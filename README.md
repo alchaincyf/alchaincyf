@@ -2,14 +2,14 @@
 
 我一行代码都不会写。
 
-但用 AI 做出了 AppStore Top 1 付费产品（小猫补光灯），写了 9 本技术书，开源的 skill 框架一个月拿了 4 万 star。
+但用 AI 做出了 AppStore Top 1 付费产品（小猫补光灯），写了 9 本技术书，开源的 skill 总共近 6 万 star（其中女娲.skill 两个月就拿了 2 万）。
 
 所有产品，全部 AI 写的。我只负责想清楚要做什么。
 
 <!-- STATS-START -->
-[![Total Stars](https://img.shields.io/badge/Total%20Stars-59.3k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
+[![Total Stars](https://img.shields.io/badge/Total%20Stars-59.4k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
 [![Followers](https://img.shields.io/badge/Followers-5.7k-4C8BF5?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=followers)
-[![Public Repos](https://img.shields.io/badge/Public%20Repos-70-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)
+[![Public Repos](https://img.shields.io/badge/Public%20Repos-94-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)
 <!-- STATS-END -->
 
 ---
@@ -35,7 +35,7 @@
 
 **[达尔文.skill](https://github.com/alchaincyf/darwin-skill)** — 让所有 Skill 自主进化
 
-受 Karpathy autoresearch 启发，用自主实验循环批量优化 Skill。8 维度评估、棘轮机制（只保留改进，自动回滚退步）、独立 agent 评分。女娲造 Skill，达尔文磨 Skill。
+受 Karpathy autoresearch 启发，用自主实验循环批量优化 Skill。9 维度评估、棘轮机制（只保留改进，自动回滚退步）、独立 agent 评分。女娲造 Skill，达尔文磨 Skill。
 
 [![达尔文.skill](https://raw.githubusercontent.com/alchaincyf/darwin-skill/master/assets/banner.svg)](https://github.com/alchaincyf/darwin-skill)
 
@@ -55,7 +55,7 @@
 
 **实践是唯一的检验标准。** 我不写「AI 可能会怎样」的文章，只写「我用 AI 做了什么」的记录。每一篇教程、每一本橙皮书，都是真实项目的副产品。
 
-**做出来比说出来有用。** 女娲.skill 一个月 1.9 万 star，没做任何推广。好东西放出去，自己会跑。
+**做出来比说出来有用。** 女娲.skill 两个月 2 万 star，没做任何推广。好东西放出去，自己会跑。
 
 ---
 
