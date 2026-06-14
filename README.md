@@ -39,11 +39,11 @@
 
 [![达尔文.skill](https://raw.githubusercontent.com/alchaincyf/darwin-skill/master/assets/banner.svg)](https://github.com/alchaincyf/darwin-skill)
 
-**FanBox · 看得见的 vibe coding**
+**FanBox · Coding Agent 的驾驶舱**
 
-AI 在你电脑上飞快起项目、改文件，FanBox 让你看清它碰过的每个文件、每一行改动，并随时接手。不是 IDE，不是终端，是 AI 干活的「现场」。本机、零配置、macOS 免费开源。
+指挥 Claude Code、Codex 在本地干活，看清它碰过的每个文件、每一行改动，随时接手。不是 IDE，不是终端，是 coding agent 的驾驶舱。本机、零配置、macOS 免费开源。
 
-[![FanBox · 看得见的 vibe coding](https://raw.githubusercontent.com/alchaincyf/fanbox/master/assets/promo-banner.png)](https://github.com/alchaincyf/fanbox)
+[![FanBox · Coding Agent 的驾驶舱](https://raw.githubusercontent.com/alchaincyf/fanbox/master/assets/promo-banner.jpg)](https://github.com/alchaincyf/fanbox)
 
 **橙皮书系列** — 免费的 AI 实战指南
 
