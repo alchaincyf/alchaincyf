@@ -8,7 +8,7 @@
 
 <!-- STATS-START -->
 [![Total Stars](https://img.shields.io/badge/Total%20Stars-69k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
-[![Followers](https://img.shields.io/badge/Followers-6.9k-4C8BF5?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=followers)
+[![Followers](https://img.shields.io/badge/Followers-7k-4C8BF5?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=followers)
 [![Public Repos](https://img.shields.io/badge/Public%20Repos-45-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)
 <!-- STATS-END -->
 
