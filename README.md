@@ -39,6 +39,12 @@
 
 [![达尔文.skill](https://raw.githubusercontent.com/alchaincyf/darwin-skill/master/assets/banner.svg)](https://github.com/alchaincyf/darwin-skill)
 
+**FanBox · 看得见的 vibe coding**
+
+AI 在你电脑上飞快起项目、改文件，FanBox 让你看清它碰过的每个文件、每一行改动，并随时接手。不是 IDE，不是终端，是 AI 干活的「现场」。本机、零配置、macOS 免费开源。
+
+[![FanBox · 看得见的 vibe coding](https://raw.githubusercontent.com/alchaincyf/fanbox/master/assets/promo-banner.png)](https://github.com/alchaincyf/fanbox)
+
 **橙皮书系列** — 免费的 AI 实战指南
 
 用到哪里写到哪里。不追求大而全，追求你看完能立刻上手。已出版 9 本，覆盖 Claude Code、Hermes Agent、Obsidian AI 等主题，全部免费阅读。
