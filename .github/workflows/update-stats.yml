@@ -119,7 +119,6 @@ jobs:
           rank_block = (
               "<!-- RANK-START -->\n"
               f"[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%23{grank}-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)\n"
-              "[![China Rank](https://user-badge.committers.top/china/alchaincyf.svg)](https://committers.top/china)\n"
               "<!-- RANK-END -->"
           )
           content = re.sub(
