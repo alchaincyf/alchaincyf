@@ -67,25 +67,36 @@ jobs:
           STARS_FMT=$(fmt $STARS)
           FOLLOWERS_FMT=$(fmt $FOLLOWERS)
 
+          # gitstar-ranking 全球名次（抓取失败留空，交给下游保留旧值）
+          GRANK=$(curl -s --max-time 20 -A "Mozilla/5.0" "https://gitstar-ranking.com/alchaincyf" \
+            | sed 's/<[^>]*>/ /g' | tr -s ' \n\t' ' ' \
+            | grep -oiE 'Rank [0-9]+' | head -1 | grep -oE '[0-9]+' || true)
+
           {
             echo "stars=$STARS_FMT"
             echo "followers=$FOLLOWERS_FMT"
             echo "repos=$REPOS"
+            echo "grank=$GRANK"
           } >> $GITHUB_OUTPUT
 
-          echo "Stats: stars=$STARS ($STARS_FMT), followers=$FOLLOWERS ($FOLLOWERS_FMT), repos=$REPOS"
+          echo "Stats: stars=$STARS ($STARS_FMT), followers=$FOLLOWERS ($FOLLOWERS_FMT), repos=$REPOS, grank=${GRANK:-未抓到}"
 
       - name: Update README
         env:
           STARS: ${{ steps.stats.outputs.stars }}
           FOLLOWERS: ${{ steps.stats.outputs.followers }}
           REPOS: ${{ steps.stats.outputs.repos }}
+          GRANK: ${{ steps.stats.outputs.grank }}
         run: |
           python3 <<'PYEOF'
           import os, re
           stars = os.environ['STARS']
           followers = os.environ['FOLLOWERS']
           repos = os.environ['REPOS']
+          grank = os.environ.get('GRANK', '').strip()
+
+          with open('README.md', 'r', encoding='utf-8') as f:
+              content = f.read()
 
           new_block = (
               "<!-- STATS-START -->\n"
@@ -94,15 +105,30 @@ jobs:
               f"[![Public Repos](https://img.shields.io/badge/Public%20Repos-{repos}-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)\n"
               "<!-- STATS-END -->"
           )
-
-          with open('README.md', 'r', encoding='utf-8') as f:
-              content = f.read()
           content = re.sub(
               r'<!-- STATS-START -->.*?<!-- STATS-END -->',
               new_block,
               content,
               flags=re.DOTALL,
           )
+
+          # gitstar 全球名次：抓到才更新徽章，抓不到保留 README 现有数字
+          if not grank:
+              m = re.search(r'Global%20Star%20Rank-%23([0-9]+)-', content)
+              grank = m.group(1) if m else '113'
+          rank_block = (
+              "<!-- RANK-START -->\n"
+              f"[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%23{grank}-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)\n"
+              "[![China Rank](https://user-badge.committers.top/china/alchaincyf.svg)](https://committers.top/china)\n"
+              "<!-- RANK-END -->"
+          )
+          content = re.sub(
+              r'<!-- RANK-START -->.*?<!-- RANK-END -->',
+              rank_block,
+              content,
+              flags=re.DOTALL,
+          )
+
           with open('README.md', 'w', encoding='utf-8') as f:
               f.write(content)
           PYEOF

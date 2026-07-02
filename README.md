@@ -12,6 +12,11 @@
 [![Public Repos](https://img.shields.io/badge/Public%20Repos-46-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)
 <!-- STATS-END -->
 
+<!-- RANK-START -->
+[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%23113-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)
+[![China Rank](https://user-badge.committers.top/china/alchaincyf.svg)](https://committers.top/china)
+<!-- RANK-END -->
+
 ---
 
 ### 我在做的事
