@@ -13,7 +13,7 @@
 <!-- STATS-END -->
 
 <!-- RANK-START -->
-[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%2390-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)
+[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%2391-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)
 <!-- RANK-END -->
 
 ---
