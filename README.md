@@ -49,6 +49,18 @@
 
 [![FanBox · Coding Agent 的驾驶舱](https://raw.githubusercontent.com/alchaincyf/fanbox/master/assets/promo-banner.jpg)](https://github.com/alchaincyf/fanbox)
 
+**huashu-mac-use** — 让 agent 伸手去碰那些没有 API 的 app
+
+macOS 上大部分原生 app 没有 API。这个 skill 给 agent 一条四层通道阶梯：先探测再选层，能走 CLI 和 CDP 就绝不点坐标。读全程走后台不打扰你，写操作要过四道闸才允许借焦点，借走的那半秒屏幕四角会亮起取景框告诉你「此刻是 agent 在动」。一个 coding agent 照着 4 张照片在 Blender 里建出十万吨级邮轮，建模、材质、灯光、运镜 33 分钟，全程没人碰鼠标。
+
+[![huashu-mac-use](https://raw.githubusercontent.com/alchaincyf/huashu-mac-use/master/assets/banner.svg)](https://github.com/alchaincyf/huashu-mac-use)
+
+**huashu-chrome** — 让 agent 用你自己的浏览器，带着你全部的登录态
+
+一个 MCP server + 一个 Chrome 扩展，22 个工具。不用 API key、不用重新登录、不用处理验证码——用的就是你此刻这个浏览器里的身份。京东比价、小红书定时发布、B 站字幕批量拉取、飞书多维表格写入，每一条都真跑通过。它还会把每个站点踩过的坑写回域名笔记，下次直接跳过——包括那些「做不到」的负面结论。
+
+[![huashu-chrome](https://raw.githubusercontent.com/alchaincyf/huashu-chrome/master/media/banner.svg)](https://github.com/alchaincyf/huashu-chrome)
+
 **橙皮书系列** — 免费的 AI 实战指南
 
 用到哪里写到哪里。不追求大而全，追求你看完能立刻上手。已出版 9 本，覆盖 Claude Code、Hermes Agent、Obsidian AI 等主题，全部免费阅读。
