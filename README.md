@@ -1,10 +1,9 @@
 # 花叔
 
-我一行代码都不会写。
-
-但用 AI 做出了 AppStore Top 1 付费产品（小猫补光灯），写了 9 本技术书，开源的 skill 总共近 6 万 star（其中女娲.skill 两个月就拿了 2 万）。
-
-所有产品，全部 AI 写的。我只负责想清楚要做什么。
+不会写代码的创造者🪄做了这些事👇
+🐱「小猫补光灯」 （国区AppStore 付费榜第一）
+🚀「女娲.skill」（Github 30k+ 🌟）
+📖 《Claude Code橙皮书》（微信读书热搜第一）
 
 <!-- STATS-START -->
 [![Total Stars](https://img.shields.io/badge/Total%20Stars-100.6k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
