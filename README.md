@@ -9,13 +9,13 @@
 📖 《Claude Code橙皮书》（微信读书热搜第一）
 
 <!-- STATS-START -->
-[![Total Stars](https://img.shields.io/badge/Total%20Stars-101.8k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
+[![Total Stars](https://img.shields.io/badge/Total%20Stars-101.9k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
 [![Followers](https://img.shields.io/badge/Followers-10.6k-4C8BF5?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=followers)
 [![Public Repos](https://img.shields.io/badge/Public%20Repos-64-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)
 <!-- STATS-END -->
 
 <!-- RANK-START -->
-[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%2379-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)
+[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%2380-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)
 <!-- RANK-END -->
 
 ---
