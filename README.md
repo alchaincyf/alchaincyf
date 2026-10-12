@@ -3,13 +3,13 @@
 我是花叔，一个不会写代码的创造者。从小猫补光灯到开源Skill，我用AI把想法做成产品，也把做过的项目写成教程和橙皮书。
 
 <!-- STATS-START -->
-[![Total Stars](https://img.shields.io/badge/Total%20Stars-102.4k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
+[![Total Stars](https://img.shields.io/badge/Total%20Stars-102.6k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
 [![Followers](https://img.shields.io/badge/Followers-10.7k-4C8BF5?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=followers)
-[![Public Repos](https://img.shields.io/badge/Public%20Repos-64-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)
+[![Public Repos](https://img.shields.io/badge/Public%20Repos-65-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)
 <!-- STATS-END -->
 
 <!-- RANK-START -->
-[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%2380-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)
+[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%2371-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)
 <!-- RANK-END -->
 
 ## 最近在做：让画动起来
