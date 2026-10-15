@@ -1,0 +1,82 @@
+name: Retire McStomach banner
+
+on:
+  schedule:
+    # 2026-10-25 00:00 Asia/Shanghai = 2026-10-24 16:00 UTC.
+    # Retry if GitHub delays or drops the first scheduled run.
+    - cron: '0,15,30,45 16-23 24 10 *'
+    - cron: '7 */6 25-26 10 *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Check removal without changing the README'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: retire-mcstomach-202610
+  cancel-in-progress: false
+
+jobs:
+  retire:
+    if: github.repository_owner == 'alchaincyf'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+    steps:
+      - name: Remove only the expired campaign and disable this workflow
+        shell: python
+        run: |
+          import base64, datetime as dt, json, os, subprocess
+          repo = os.environ["GITHUB_REPOSITORY"]
+          dry = os.environ["DRY_RUN"] == "true"
+          deadline = dt.datetime(2026, 10, 24, 16, tzinfo=dt.timezone.utc)
+          due = dt.datetime.now(dt.timezone.utc) >= deadline
+          start = "<!-- MCSTOMACH-PROMO-202610-START -->"
+          end = "<!-- MCSTOMACH-PROMO-202610-END -->"
+
+          def api(path, payload=None, method=None):
+              cmd = ["gh", "api", path]
+              if method:
+                  cmd += ["--method", method]
+              if payload is not None:
+                  cmd += ["--input", "-"]
+              result = subprocess.run(cmd, input=json.dumps(payload) if payload is not None else None,
+                                      text=True, capture_output=True, check=True)
+              return json.loads(result.stdout) if result.stdout.strip() else None
+
+          branch = api(f"repos/{repo}")["default_branch"]
+          item = api(f"repos/{repo}/contents/README.md?ref={branch}")
+          text = base64.b64decode(item["content"]).decode("utf-8")
+          if text.count(start) != text.count(end) or text.count(start) > 1:
+              raise RuntimeError("Ambiguous campaign markers; README left unchanged")
+          updated = text
+          if start in text:
+              left, rest = text.split(start, 1)
+              block, right = rest.split(end, 1)
+              if end in left or "https://github.com/alchaincyf/mcstomach" not in block:
+                  raise RuntimeError("Unexpected campaign block; README left unchanged")
+              updated = left + right.removeprefix("\n\n")
+          print(f"dry_run={dry}; due={due}; banner_present={start in text}; branch={branch}")
+          if dry or not due:
+              print("Validation complete. No files changed; workflow remains enabled.")
+          else:
+              if updated != text:
+                  result = api(f"repos/{repo}/contents/README.md", {
+                      "message": "docs: retire October McStomach promotion",
+                      "content": base64.b64encode(updated.encode()).decode(),
+                      "sha": item["sha"], "branch": branch,
+                  }, "PUT")
+                  print("Removal commit:", result["commit"]["html_url"])
+              current = api(f"repos/{repo}/contents/README.md?ref={branch}")
+              current_text = base64.b64decode(current["content"]).decode("utf-8")
+              if start in current_text or end in current_text:
+                  raise RuntimeError("Remote verification failed; workflow stays enabled for retry")
+              api(f"repos/{repo}/actions/workflows/retire-mcstomach.yml/disable", method="PUT")
+              print("Remote removal verified. This campaign workflow is now disabled.")

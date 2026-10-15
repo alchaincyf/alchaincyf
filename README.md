@@ -1,3 +1,11 @@
+<!-- MCSTOMACH-PROMO-202610-START -->
+[![麦门胃：胃口不大，一颗Star就行。](assets/mcstomach-promo-202610.png)](https://github.com/alchaincyf/mcstomach)
+
+我用女娲把自己的胃蒸馏成了Skill，还长出了毛绒分身。去看看你的胃是什么性格，觉得好玩，就在仓库右上角点颗Star。
+
+[🍟 看看麦门胃，投喂一颗Star →](https://github.com/alchaincyf/mcstomach)
+<!-- MCSTOMACH-PROMO-202610-END -->
+
 <img src="assets/hero.jpg" alt="花叔：不会写代码，也能做出自己的作品" width="100%" />
 
 我是花叔，一个不会写代码的创造者。从小猫补光灯到开源Skill，我用AI把想法做成产品，也把做过的项目写成教程和橙皮书。
