@@ -13,12 +13,9 @@
 <!-- STATS-START -->
 [![Total Stars](https://img.shields.io/badge/Total%20Stars-104.6k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
 [![Followers](https://img.shields.io/badge/Followers-11.1k-4C8BF5?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=followers)
-[![Public Repos](https://img.shields.io/badge/Public%20Repos-65-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)
+[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%2371-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)
 <!-- STATS-END -->
 
-<!-- RANK-START -->
-[![Global Star Rank](https://img.shields.io/badge/Global%20Star%20Rank-%2371-FF6B6B?style=flat&logo=github&logoColor=white)](https://gitstar-ranking.com/alchaincyf)
-<!-- RANK-END -->
 
 ## 最近在做：让画动起来
 
