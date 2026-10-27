@@ -3,8 +3,8 @@
 我是花叔，一个不会写代码的创造者。从小猫补光灯到开源Skill，我用AI把想法做成产品，也把做过的项目写成教程和橙皮书。
 
 <!-- STATS-START -->
-[![Total Stars](https://img.shields.io/badge/Total%20Stars-112.9k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
-[![Followers](https://img.shields.io/badge/Followers-12.2k-4C8BF5?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=followers)
+[![Total Stars](https://img.shields.io/badge/Total%20Stars-113.1k-FFD93D?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf)
+[![Followers](https://img.shields.io/badge/Followers-12.3k-4C8BF5?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=followers)
 [![Public Repos](https://img.shields.io/badge/Public%20Repos-67-2EA44F?style=flat&logo=github&logoColor=white)](https://github.com/alchaincyf?tab=repositories)
 <!-- STATS-END -->
 
