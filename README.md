@@ -1,7 +1,7 @@
 <!-- BIRD-STICKER-PROMO-START -->
 <a href="https://birdalbum.com/zh/?utm_source=github&utm_medium=profile&utm_campaign=bird-sticker"><img src="assets/birdalbum-promo.webp" alt="Bird Album：地球上的每一种鸟，一种一张贴纸。birdalbum.com" width="100%"></a>
 
-全世界现存的11064种鸟，每种一张白边贴纸，我把整套都开源了，还附上43种语言的鸟名和分布、形态数据。[birdalbum.com](https://birdalbum.com/zh/?utm_source=github&utm_medium=profile&utm_campaign=bird-sticker)是用这套贴纸做的免费鸟类网站：15种语言搜鸟名、看分布，地图上有8171个观鸟点。
+全世界现存的1.1万多种鸟，每种一张白边贴纸，我把整套都开源了，还附上43种语言的鸟名和分布、形态数据。[birdalbum.com](https://birdalbum.com/zh/?utm_source=github&utm_medium=profile&utm_campaign=bird-sticker)是用这套贴纸做的免费鸟类网站：15种语言搜鸟名、看分布，地图上有8171个观鸟点。
 
 [🐦 去贴纸仓库点颗Star →](https://github.com/alchaincyf/huashu-bird-sticker) · [逛逛birdalbum.com →](https://birdalbum.com/zh/?utm_source=github&utm_medium=profile&utm_campaign=bird-sticker)
 <!-- BIRD-STICKER-PROMO-END -->
