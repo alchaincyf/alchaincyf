@@ -1,3 +1,7 @@
+<!-- BOOK-PROMO-START 《图解Agent Skills》京东横幅，2026-12-21下线 -->
+<a href="https://item.jd.com/14829817.html"><img src="assets/book-agent-skills-jd-b.jpg" alt="纸质书《图解Agent Skills：让AI记住你的工作方式》已上市，点击去京东购买" width="100%"></a>
+<!-- BOOK-PROMO-END -->
+
 <!-- BIRD-STICKER-PROMO-START -->
 <a href="https://birdalbum.com/zh/?utm_source=github&utm_medium=profile&utm_campaign=bird-sticker"><img src="assets/birdalbum-promo.webp" alt="Bird Album：地球上的每一种鸟，一种一张贴纸。birdalbum.com" width="100%"></a>
 
